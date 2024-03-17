@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter.messagebox import showerror
 from wikipedia import summary
 
-# This function using for the answer of search
 def get_answer():
     try:
         answer.delete(1.0, END)
@@ -33,15 +32,15 @@ top_frame.pack(side='top', fill='x', padx=55, pady=12)
 bottom_frame = Frame(root, bg='lightblue')
 bottom_frame.pack(side='top', fill='x', padx=10, pady=10)
 
-# This is the search-box
+# search-box
 search_box = Entry(top_frame, font=font2, width=25, bd=4)
 search_box.pack(side='left', ipady=5)
 
-# This is the search-button
+# search-button
 search_button = Button(top_frame, text='SEARCH', font=font1, bd=4, command=get_answer)
 search_button.pack(side='right')
 
-# This is the result / answer
+# result / answer
 answer = Text(bottom_frame, font=font3, fg='black', width=70, height=100)
 answer.pack(side='left', fill='y')
 
