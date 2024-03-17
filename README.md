@@ -6,6 +6,6 @@ Project implementation steps:
 
 2: Write the following commands:
 
-    pip install requirements.txt
+    pip install -r requirements.txt
 
     python wikipedia.py
